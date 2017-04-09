@@ -87,26 +87,32 @@
 
    display: flex;
    flex-direction: row;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
-   width: auto;
+   width: 63%;
    height: auto;
-   margin-bottom: 20px;
+   /*margin-bottom: 20px;*/
    position: relative;
-   top: 30px;
+   /*top: 30px;*/
 
 }
 
+.filleravatar {
+    /*width: 1%;*/
+}
 
+.Beginavat {
+    width: 100%;
+    margin-top: 40px;
+}
 
 #guestAvatar
 {
 
-   width: 150px;
-   height: 150px;
+   width: 250px;
+   height: 250px;
    border: 1px solid #3E454B;
-   border-radius: 3px;
-   background-color: #3E454B;
+   border-radius: 140px;
    padding: 20px;
 
 }
@@ -115,7 +121,7 @@
 #personalData
 {
 
-   width: auto;
+   width: 40%;
    height: auto;
    padding: 10px;
    display: flex;
@@ -123,6 +129,21 @@
    justify-content: flex-start;
    align-items: flex-start;
 
+}
+
+.inpersonaldata {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.settingstext {
+    display: inline-flex;
+    width: auto;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    align-content: center;
 }
 
 
@@ -136,6 +157,12 @@
 
 }
 
+.data {
+    font-weight:600;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
 
 #userUpdateError
 {
@@ -151,25 +178,30 @@
 {
 
    display: flex;
-   flex-direction: column;
-   justify-content: flex-end;
-   align-items: flex-end;
-   width: auto;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   width: 50%;
+    flex-wrap: wrap;
    height: auto;
    margin: auto;
    margin-bottom: 40px;
 
 }
 
+.blabla {
+    margin: 10px;
+}
 
 .inputsContainer
 {
-
+    /*border:1px solid green;*/
    display: flex;
-   flex-direction: row;
-   justify-content: flex-start;
-   align-items: flex-start;
-   width: auto;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+    flex:0 1 20%;
    height: auto;
 
 }
@@ -177,14 +209,16 @@
 
 .inputsContainer p
 {
-
+    font-weight: 700;
    font-size: 18px;
-   text-align: left;
-   margin-left: 30px;
-   margin-right: 50px;
-   position: relative;
-   bottom: 10px;
-
+   /*text-align: left;*/
+   /*margin-left: 30px;*/
+   /*margin-right: 50px;*/
+   /*position: relative;*/
+   /*bottom: 10px;*/
+    width: 100%;
+    margin:10px;
+    text-align: right;
 }
 
 
@@ -193,40 +227,64 @@
 
    width: 400px;
    height: 35px;
-   border: 1px solid #0691D0;
+   border: 1px solid rgb(217,218,219);
    border-radius: 3px;
    background-color: white;
-   padding-left: 10px;
+   /*padding-left: 10px;*/
    font-size: 18px;
-   text-align: left;
-   margin-bottom: 10px;
+   /*text-align: left;*/
+   /*margin-bottom: 10px;*/
+    margin: 3px;
 
 }
 
 
-#currentPass
-{
+/*#currentPass*/
+/*{*/
 
-   border: 1px solid #F91535;
-   color: #F91535;
+   /*border: 1px solid tomato;*/
+   /*color: dodgerblue;*/
 
-}
+/*}*/
 
 
-#editContainer input[type="submit"]
-{
-
-   width: 630px;
-   height: 35px;
-   border: 2px solid #0691D0;
+#updateUserData {
+    flex:1 0 100%;
    border-radius: 3px;
    font-size: 18px;
-   background-color: #0691D0;
    color: white;
    text-align: center;
    cursor: pointer;
    margin-top: 20px;
+    width: 40%;
 
+}
+
+#updateUserData input[type='submit'] {
+    border:none;
+    background:rgb(116,173,113);
+    color: white;
+    text-align: center;
+    width:40%;
+    border-radius:15px;
+    font-size:25px;
+    -webkit-transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+    -ms-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.5s;
+    /*display: none;*/
+}
+
+#updateUserData input[type='submit']:hover {
+    /*background: rgb(79, 122, 77);*/
+    -webkit-transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+    -ms-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: ease-in-out 0.5s;
 }
 
 

@@ -6,7 +6,7 @@
 
     </div>-->
 
-    <p id="loginError">Welcom on the Bemika cms login page...</p>
+    <p id="loginError"><?php echo $loginmessage; ?></p>
 
 </div>
 

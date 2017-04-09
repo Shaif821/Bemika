@@ -17,7 +17,7 @@ class Login extends Model
 
             //Checkt of het wel is ingevoerd of niet
             if (empty($superUser) AND empty($pass)) {
-                echo 'Voer iets in';
+                header("Location: ?action=Login&Loginmessage=empty");
             } //Als het ingevuld is
             else {
                 //Controle of de username bestaat:
@@ -73,11 +73,13 @@ class Login extends Model
 
                     }
                     else { //Als er geen resultaat is:
-                        echo 'onjuist wachtwoord';
+                        header("Location: ?action=Login&Loginmessage=error");
+
                     }
 
                 } else {
-                    echo 'Onjuist username';
+                    header("Location: ?action=Login&Loginmessage=error");
+
                 }
             }
         }

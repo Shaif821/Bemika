@@ -34,26 +34,7 @@ class Adduser extends Model
                     $this->db->query("INSERT INTO users (firstname, lastnames, username, password, active, email, grade)
                     VALUES ('$name', '$lastname', '$username', '$password', 1, '$email', 'guest_user')") or die(mysqli_error($this->db));
 
-                    //mail gedoe:
-                    $boundary = "-----=".md5(rand());
-                    $headers =  'MIME-Version: 1.0' . "\r\n";
-                    $headers .= 'From: Bemika <Bemika@gmail.com>' . "\r\n";
-                    $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
-                    $header .= "Content-type: multipart/alternative;". "\r\n" ."boundary=\"$boundary\"". "\r\n";
-                    $headers .= 'Content-Transfer-Encoding: 8bit' . "\r\n";
-
-                    $subject = "Registratie";
-                    $body = "Beste , $name $lastname, <br> U bent aangemeld voor Bemika. <br> Uw gegevens: <br> Gebrukernsaam: $username<br>Wachtwoord: $password3<br> Met vriendeljke groet, <br> <br> Bemika<br> Let op: U kunt niet reageren op deze mail!";
-                    $bericht = wordwrap($body, 70);
-
-                    $stuur = mail($email, $subject, $bericht, $headers);
-
-                    if(!stuur){
-                        header("Location: ?action=Adduser&errormail");
-                    }else {
-                        header("Location: ?action=Adduser&succes");
-                    }
-
+                    header("Location: ?action=Adduser&Message=".$password3."&username=".$username);
                 }
                 else {
                     header("Location: ?action=Adduser&Addmessage=nameexist");

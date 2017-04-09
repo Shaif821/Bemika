@@ -25,7 +25,7 @@
                 <option value="Sports">Sports</option>
             </select>
 
-            <input type="submit" name="Filter" value="Filter">
+            <input type="submit" class="filterbutton" name="Filter" value="Filter">
                 </form>
             </div>
 
@@ -67,7 +67,7 @@
         }
          echo '<div class="date">'.$date.'</div></div></td>';
         echo  '<td class="eentd" ><div class="iconsed">';
-        echo '<a style="text-decoration:none; color:black;" href="?action=Posts&postid='.$contentData['contents_id'].'&userid='.$contentData['id'].'&category='.$contentData['content_category'].'&update=update"><img class="usericon" src="css/Icons/edit2.png"></a>';
+        echo '<a style="text-decoration:none; color:black;" href="?action=Posts&postid='.$contentData['contents_id'].'&userid='.$contentData['id'].'&category='.$contentData['content_category'].'&update=update"><img class="usericon" src="css/Icons/edit (3) copy.png"></a>';
         echo '<form method="POST"><button style="border: none; background:none;" name="dele" value="'.$contentData['contents_id'].'" type="submit"><img class="usericon" src="css/Icons/del.png"></button><input type="hidden" name="hid" value="'.$contentData['content_category'].'"></form></div></td>';
          echo '</tr>';
 

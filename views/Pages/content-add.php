@@ -20,7 +20,7 @@
                                 <label for="file"><img  class="paperclip" src="css/Icons/paperclip.png"><span><p>Add media</p></span></label>
                             </div>
                             <div class="edittext"></div>
-                            <div class="optionstext"><div class="omoptions"><bold>B</bold><i>i</i></div><div class="fillertext"></div></div>
+                            <div class="optionstext"><div class="omoptions"><img style="width: 20px; height: 20px;" src="css/Icons/bold.png"><img style="width: 20px; height: 20px;" src="css/Icons/italic-text.png"></div><div class="fillertext"></div></div>
                             <textarea onkeyup="count();" id="counttext" name="description" class="textarea" rows="15" cols="90" placeholder="Voer hier uw content in"></textarea>
                             <div class="optionswords"><div id="total" class="omoptionstext">Words :</div><div class="fillertext"></div></div>
                             <br>

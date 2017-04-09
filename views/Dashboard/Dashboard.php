@@ -27,12 +27,6 @@
                     foreach ($logbookList as $logData) {
                         echo '<tr><th class="datekolom">'.$logData['date'].'</th>';
                         echo '<th class="binnenkolom"><div class="omlog"><div class="omlogimg">';
-                        if(empty($logData['avatar'])){
-                            echo '<img src="css/Icons/contact-outline.png">';
-                        }else{
-                            echo '<img style="border-radius: 50%;" src="data:image;base64,'.$logData['avatar'].'">';
-
-                        }
                         echo '</div><div class="omlogtekst"><p>' . $logData['firstname'] . ' ' . $logData['activity'] . ' -> ' . $logData['tag_name'] .' -> '. $logData['category'] . '</p>';
                         echo '</div></div></th</tr>';
                     }

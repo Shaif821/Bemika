@@ -2,6 +2,7 @@
 session_start();
 require('includes/config.php');
 require('includes/bootstrap.php');
+date_default_timezone_set('Europe/Amsterdam');
 
 if(isset($_GET['Message']) AND $_GET['Message'] == 'velden') {
     $messagecontent = '<p style="font-size: 11px;">The following fields are required: Title, Text, Category<br>
@@ -62,9 +63,22 @@ if(isset($_GET['Useredit']) AND $_GET['Useredit'] == 'nopass'){
     $settingsmessage = 'Updated everything successful';
 }elseif(isset($_GET['Useredit']) AND $_GET['Useredit'] == 'empty'){
     $settingsmessage = 'Fields are empty';
+}elseif(isset($_GET['Useredit']) AND $_GET['Useredit'] == 'usernameexist'){
+    $settingsmessage = 'Username exist';
 }else {
     $settingsmessage = 'Update your personal data...';
 }
+
+if(isset($_GET['Loginmessage']) AND $_GET['Loginmessage'] == 'succes'){
+    $loginmessage = 'Successfully updated your data.. Log in';
+}elseif(isset($_GET['Loginmessage']) AND $_GET['Loginmessage'] == 'empty'){
+    $loginmessage = 'Fields are empty...';
+}elseif(isset($_GET['Loginmessage']) AND $_GET['Loginmessage'] == 'error'){
+    $loginmessage = 'Username/password combination doesnt exists.';
+}else {
+    $loginmessage = 'Welcome to the Bemika CMS page';
+}
+
 
 //De id van de user & posts | indivudueel
 if(isset($_SESSION['id']) AND isset($_SESSION['username']) AND isset($_SESSION['password']) AND isset($_SESSION['grade'])){
@@ -155,7 +169,7 @@ switch ($action) {
 
             include 'views/Pages/contentlist.php';
         } else {
-            header("Location: ?action=Login");
+            header("Location: ?action=Logout");
         }
 
         break;
@@ -173,7 +187,7 @@ switch ($action) {
 
             include 'views/Pages/contentlist.php';
         } else {
-            header("Location: ?action=Login");
+            header("Location: ?action=Logout");
         }
         break;
 
@@ -190,7 +204,7 @@ switch ($action) {
 
             include 'views/Pages/contentlist.php';
         } else {
-            header("Location: ?action=Login");
+            header("Location: ?action=Logout");
         }
 
         break;
@@ -208,7 +222,7 @@ switch ($action) {
 
             include 'views/Pages/contentlist.php';
         } else {
-            header("Location: ?action=Login");
+            header("Location: ?action=Logout");
         }
 
         break;
@@ -229,7 +243,7 @@ switch ($action) {
             //Het kunnen updaten van content
             include 'views/Pages/content-edit.php';
         } else {
-            header("Location: ?action=Login");
+            header("Location: ?action=Logout");
         }
 
         break;
@@ -247,7 +261,7 @@ switch ($action) {
 
             include 'views/Pages/content-add.php';
         } else {
-            header("Location: ?action=Login");
+            header("Location: ?action=Logout");
         }
 
         break;
@@ -264,7 +278,7 @@ switch ($action) {
 
             include 'views/Pages/category.php';
         } else {
-            header("Location: ?action=Login");
+            header("Location: ?action=Logout");
         }
 
         break;
@@ -280,7 +294,7 @@ switch ($action) {
 
             include 'views/Standaard/settings.php';
         } else {
-            header("Loccation: ?action=Login");
+            header("Loccation: ?action=Logout");
         }
 
         break;
@@ -298,7 +312,7 @@ switch ($action) {
 
             include 'views/User/user-add.php';
         } else {
-            header("Location: ?action=Login");
+            header("Location: ?action=Logout");
         }
 
         break;

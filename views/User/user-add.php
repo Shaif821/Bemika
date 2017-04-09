@@ -208,8 +208,10 @@
 
             <div id="avatarName">
 
-                <img  src="data:image;base64,<?php echo $userData['avatar']; ?>" alt="" id="superUserAvatar">
+                <img  src="css/Icons/avatar.png" alt="" id="superUserAvatar">
+                <div class="adimg"><h1>Admin</h1>
                 <p id="superUserName"><?php echo $userData['firstname'].' '.$userData['lastnames']; ?></p>
+                </div>
 
             </div>
 
@@ -229,6 +231,7 @@
 
 </div>
     </div>
+    <br><br>
     <div class="omadd">
         <h2 style="font-size: 200%;">Subadmins</h2>
 

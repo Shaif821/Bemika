@@ -7,7 +7,7 @@
                     <img class="pageimg" src="css/images/movies.png">
                     <div class="buttonspage">
                         <a href="?action=Add&category=Movies"><button><img src="css/Icons/add.png"></button></a>
-                        <a href="?action=Movies"><button><img src="css/Icons/edit.png"></button></a>
+                        <a href="?action=Movies"><button><img src="css/Icons/edit (3).png"></button></a>
                     </div>
                     <div class="buttontext">
                         <p>ADD</p>
@@ -19,7 +19,7 @@
                     <img class="pageimg" src="css/images/music.png">
                     <div class="buttonspage">
                         <a href="?action=Add&category=Music"><button><img src="css/Icons/add.png"></button></a>
-                        <a href="?action=Music"><button><img src="css/Icons/edit.png"></button></a>
+                        <a href="?action=Music"><button><img src="css/Icons/edit (3).png"></button></a>
                     </div>
                     <div class="buttontext">
                         <p>ADD</p>
@@ -35,7 +35,7 @@
                     <img class="pageimg" src="css/images/software.png">
                     <div class="buttonspage">
                         <a href="?action=Add&category=Software"><button><img src="css/Icons/add.png"></button></a>
-                        <a href="?action=Software"><button><img src="css/Icons/edit.png"></button></a>
+                        <a href="?action=Software"><button><img src="css/Icons/edit (3).png"></button></a>
                     </div>
                     <div class="buttontext">
                         <p>ADD</p>
@@ -47,7 +47,7 @@
                     <img class="pageimg" src="css/images/sports.png">
                     <div class="buttonspage">
                         <a href="?action=Add&category=Sports"><button><img src="css/Icons/add.png"></button></a>
-                        <a href="?action=Sports"><button><img src="css/Icons/edit.png"></button></a>
+                        <a href="?action=Sports"><button><img src="css/Icons/edit (3).png"></button></a>
                     </div>
                     <div class="buttontext">
                         <p>ADD</p>
