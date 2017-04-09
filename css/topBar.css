@@ -1,0 +1,157 @@
+/*html, body*/
+/*{*/
+
+   /*padding: 0px;*/
+   /*margin: 0px;*/
+
+/*}*/
+
+
+/*#topBarContainer*/
+/*{*/
+
+   /*width: 100%;*/
+   /*height: auto;*/
+   /*display: flex;*/
+   /*flex-direction: column;*/
+   /*justify-content: flex-end;*/
+   /*align-items: flex-end;*/
+
+/*}*/
+
+
+/*#topBarOptionContainer*/
+/*{*/
+
+   /*width: auto;*/
+   /*height: auto;*/
+   /*padding: 7px;*/
+   /*border: 1px solid #32323A;*/
+   /*background-color: #32323A;*/
+   /*border-radius: 3px;*/
+   /*margin-bottom: -77px;*/
+   /*position: relative;*/
+   /*bottom: 150px;*/
+   /*right: 20px;*/
+   /*z-index: 3;*/
+
+/*}*/
+
+
+/*#topBarOptionContainer .icon-cancel-circle*/
+/*{*/
+
+   /*font-size: 18px;*/
+   /*cursor: pointer;*/
+   /*color: white;*/
+   /*position: relative;*/
+   /*bottom: 5px;*/
+   /*margin-top: 10px;*/
+
+/*}*/
+
+
+/*#topBarOptionContainer .icon-cancel-circle:hover*/
+/*{*/
+
+   /*color: red;*/
+
+/*}*/
+
+
+/*#topBarOptionContainer a*/
+/*{*/
+
+   /*text-decoration: none;*/
+   /*width: 100px;*/
+   /*height: 30px;*/
+   /*color: #32323A;*/
+   /*border: 1px solid white;*/
+   /*border-radius: 2px;*/
+   /*background-color: white;*/
+   /*padding: 3px;*/
+   /*padding-left: 7px;*/
+   /*padding-right: 7px;*/
+   /*margin-top: 5px;*/
+   /*display: flex;*/
+   /*flex-direction: row;*/
+   /*justify-content: center;*/
+   /*align-items: center;*/
+
+/*}*/
+
+
+/*#topBarOptionContainer a:hover*/
+/*{*/
+
+   /*color: #F39200;*/
+
+/*}*/
+
+
+/*.icon-exit*/
+/*{*/
+
+   /*font-size: 23px;*/
+   /*position: relative;*/
+   /*top: 2px;*/
+
+/*}*/
+
+
+/*#topBarOptionContainer a p*/
+/*{*/
+
+   /*text-align: center;*/
+   /*font-size: 18px;*/
+   /*position: relative;*/
+   /*bottom: 2px;*/
+
+/*}*/
+
+
+/*#topBar*/
+/*{*/
+
+   /*width: 100%;*/
+   /*height: 10px;*/
+   /*background-color: #EFFBFF;*/
+   /*border: 1px solid #EFFBFF;*/
+   /*display: flex;*/
+   /*flex-direction: row;*/
+   /*justify-content: flex-end;;*/
+   /*align-items: flex-end;*/
+   /*z-index: 2;*/
+
+/*}*/
+
+
+
+/*#topBar #User_Name*/
+/*{*/
+
+   /*font-size: 20px;*/
+   /*text-align: center;*/
+   /*cursor: pointer;*/
+   /*margin-right: 30px;*/
+   /*position: relative;*/
+   /*top: 4px;*/
+
+/*}*/
+
+
+/*#topBar #User_Name:hover*/
+/*{*/
+
+   /*color: #A7C80F;*/
+
+/*}*/
+
+
+/*#topBar #User_Name span*/
+/*{*/
+
+   /*font-size: 30px;*/
+   /*margin-left: 5px;*/
+
+/*}*/

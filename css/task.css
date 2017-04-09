@@ -1,0 +1,629 @@
+html, body
+{
+
+   padding: 0px;
+   margin: 0px;
+   background-color: #00A68C;
+
+}
+
+
+#taskContainer
+{
+
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: flex-start;
+   width: 100%;
+   height: auto;
+
+}
+
+
+#tasks
+{
+
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+}
+
+
+#addTasks
+{
+
+   width: auto;
+   height: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: flex-start;
+   margin-bottom: -450px;
+   position: relative;
+   bottom: 600px;
+
+}
+
+
+#addTasks form
+{
+
+   width: auto;
+   height: auto;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid #9CD0FD;
+   border-radius: 3px;
+   background-color: #3E454B;
+   position: fixed;
+   z-index: 3;
+
+}
+
+
+#addTasks form span
+{
+
+   font-size: 23px;
+   color: white;
+   border-radius: 100%;
+   margin-top: 15px;
+   margin-bottom: 10px;
+   cursor: pointer;
+
+}
+
+
+#addTasks form span:hover
+{
+
+   color: #F91535;
+
+}
+
+
+#addTasks form p
+{
+
+   font-size: 17px;
+   color: white;
+   margin-top: 10px;
+   margin-bottom: 15px;
+
+}
+
+
+#addTasks form input
+{
+
+   width: 320px;
+   height: 33px;
+   border: 1px solid white;
+   border-radius: 3px;
+   background-color: #FEF9FE;
+   padding-left: 10px;
+   font-size: 18px;
+   color: #3E454B;
+   margin-bottom: 5px;
+
+}
+
+
+#addTasks form textarea
+{
+
+   width: 330px;
+   height: 100px;
+   margin-bottom: 5px;
+   border: 1px solid white;
+   border-radius: 3px;
+   background-color: #FEF9FE;
+
+}
+
+
+#addTasks form select
+{
+
+    width: 333px;
+    height: 33px;
+    margin-bottom: 5px;
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: #FEF9FE;
+
+}
+
+
+#addTasks form input[type="submit"]
+{
+
+   text-align: center;
+   background-color: #9CD0FD;
+   border: 1px solid #9CD0FD;
+   cursor: pointer;
+   width: 333px
+
+}
+
+
+#addTasks form input[type="submit"]:hover
+{
+
+   background-color: white;
+   color: #9CD0FD;
+
+}
+
+
+
+#updateTask
+{
+
+   display: none;
+
+}
+
+
+#taskPassword
+{
+
+   display: none;
+
+}
+
+
+#tasksContents
+{
+
+   width: 70%;
+   height: 400px;
+   border: 1px solid #3E454B;
+   border-radius: 3px;
+   padding: 10px;
+   background-color: #3E454B;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+   margin-bottom: 15px;
+   position: relative;
+   bottom: 100px;
+   z-index: 3;
+
+}
+
+
+#tasksContents span
+{
+
+   font-size: 23px;
+   color: white;
+   cursor: pointer;
+   margin-top: -200px;
+   position: relative;
+   /*bottom: 150px;*/
+
+}
+
+
+#tasksContents span:hover
+{
+
+   color: red;
+
+}
+
+
+#tasksMenu
+{
+
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   top: 70px;
+   margin-bottom: 100px;
+   margin-right: 50px;
+
+}
+
+
+#returnButt
+{
+
+   width: auto;
+   height: auto;
+   text-decoration: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: -20px;
+   position: relative;
+   top: 50px;
+   margin-left: -1250px;
+
+}
+
+
+#returnButt:hover span
+{
+
+   color: green;
+
+}
+
+
+#returnButt:hover h2
+{
+
+   color: green;
+
+}
+
+
+#returnButt span
+{
+
+   font-size: 40px;
+   color: white;
+   margin-right: 5px;
+
+}
+
+
+#returnButt h2
+{
+
+   text-align: center;
+   color: white;
+
+}
+
+
+#addContainer
+{
+
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#addContainer span
+{
+
+   font-size: 30px;
+   padding: 15px;
+   color: green;
+   border: 2px solid green;
+   border-radius: 100%;
+   background-color: white;
+   cursor: pointer;
+
+}
+
+
+#addContainer span:hover
+{
+
+   background-color: green;
+   color: #00A68C;
+
+}
+
+
+#addContainer p
+{
+
+   text-align: center;
+   font-size: 18px;
+   color: white;
+   margin-top: 2px;
+
+}
+
+
+.tasksNotification
+{
+
+   width: 350px;
+   height: 170px;
+   border-radius: 3px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-left: 15px;
+   margin-right: 15px;
+   margin-bottom: -20px;
+
+}
+
+
+.tasksNotification h1
+{
+
+   text-align: center;
+   color: #3E454B;
+   margin-top: 10px;
+   margin-bottom: 5px;
+
+}
+
+
+.tasksNotification button
+{
+
+   width: auto;
+   height: auto;
+   padding: 10px;
+   cursor: pointer;
+   text-align: center;
+   color: white;
+   border: 1px solid #3E454B;
+   border-radius: 3px;
+   background-color: #3E454B;
+   margin-top: 10px;
+   margin-bottom: 10px;
+
+}
+
+
+.tasksNotification button:hover
+{
+
+   color: #3E454B;
+   background-color: white;
+
+}
+
+
+.tasksNotification:nth-child(2)
+{
+
+   background-color: #F91535;
+   border: 1px solid #F91535;
+
+}
+
+
+.tasksNotification:nth-child(3)
+{
+
+   background-color: yellow;
+   border: 1px solid yellow;
+
+}
+
+
+.tasksNotification:nth-child(4)
+{
+
+   background-color: green;
+   border: 1px solid green;
+
+}
+
+
+
+#displayTasksContainer
+{
+
+   width: 100%;
+   height: auto;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   margin-top: 50px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: flex-start;
+
+}
+
+
+
+.toDoTaskContainer
+{
+
+   width: 350px;
+   height: auto;
+   background-color: #F91535;
+   border: 1px solid #F91535;
+   border-radius: 3px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-left: 10px;
+   margin-right: 10px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+
+}
+
+
+.actionsContainer
+{
+
+   width: auto;
+   height: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: -20px;
+   position: relative;
+   bottom: 20px;
+   left: 80px;
+
+}
+
+
+.actionsContainer span
+{
+
+   font-size: 23px;
+   border: 2px solid #F91535;
+   border-radius: 100%;
+   color: #F91535;
+   background-color: #00A68C;
+   padding: 10px;
+   cursor: pointer;
+   margin-left: 7px;
+   margin-right: 7px;
+
+}
+
+
+.actionsContainer span:hover
+{
+
+   color: #00A68C;
+   background-color: #F91535;
+   border: 2px solid #00A68C;
+
+}
+
+
+.toDoTaskContainer h2
+{
+
+   text-align: center;
+   color: white;
+   margin-top: 15px;
+   margin-bottom: 20px;
+   width: 50%;
+   height: auto;
+   margin-bottom: 1px;
+
+}
+
+
+.toDoTaskContainer p
+{
+
+   font-size: 18px;
+   text-align: center;
+   color: white;
+   margin-top: 15px;
+   margin-bottom: 20px;
+   width: 90%;
+   height: auto;
+   margin-bottom: 1px;
+
+}
+
+
+
+.dateInfos
+{
+
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+}
+
+
+.dateInfos p
+{
+
+   font-size: 15px;
+   color: black;
+   text-align: center;
+
+}
+
+
+.toDoTaskContainerAll
+{
+
+   width: 90%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+}
+
+
+
+.toDoTaskContainerAll h2
+{
+
+   text-align: center;
+   color: white;
+   margin-top: 15px;
+   margin-bottom: 20px;
+   width: 50%;
+   height: auto;
+   margin-bottom: 1px;
+
+}
+
+
+.toDoTaskContainerAll p
+{
+
+   font-size: 18px;
+   text-align: center;
+   color: white;
+   margin-top: 15px;
+   margin-bottom: 20px;
+   width: 90%;
+   height: auto;
+   margin-bottom: 1px;
+
+}
+
+
+
+.dateInfosAll
+{
+
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+}
+
+
+.dateInfosAll p
+{
+
+   font-size: 18px;
+   color: black;
+   text-align: center;
+
+}

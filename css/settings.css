@@ -1,0 +1,239 @@
+
+
+#settingsContainer
+{
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: auto;
+   position: relative;
+   /*top: 370px;*/
+
+}
+
+#returnButt
+{
+
+   width: auto;
+   height: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   margin-bottom: -70px;
+   position: relative;
+   right: 570px;
+   z-index: 3;
+
+}
+
+
+#returnButt:hover span
+{
+
+   color: #0691D0;
+
+}
+
+
+#returnButt:hover h3
+{
+
+   color: #0691D0;
+
+
+}
+
+
+
+#returnButt span
+{
+
+   font-size: 35px;
+   color: #3E454B;
+   margin-right: 5px;
+
+}
+
+
+#returnButt h3
+{
+
+   color: #3E454B;
+
+}
+
+
+
+#settingsRightSideBar
+{
+
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    background-color: white;
+
+}
+
+
+#personalDataContainer
+{
+
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   width: auto;
+   height: auto;
+   margin-bottom: 20px;
+   position: relative;
+   top: 30px;
+
+}
+
+
+
+#guestAvatar
+{
+
+   width: 150px;
+   height: 150px;
+   border: 1px solid #3E454B;
+   border-radius: 3px;
+   background-color: #3E454B;
+   padding: 20px;
+
+}
+
+
+#personalData
+{
+
+   width: auto;
+   height: auto;
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+
+}
+
+
+#personalData p
+{
+
+   font-size: 18px;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   text-align: left;
+
+}
+
+
+#userUpdateError
+{
+
+   margin-top: 50px;
+   text-align: center;
+   font-size: 20px;
+
+}
+
+
+#editContainer
+{
+
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: flex-end;
+   width: auto;
+   height: auto;
+   margin: auto;
+   margin-bottom: 40px;
+
+}
+
+
+.inputsContainer
+{
+
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: flex-start;
+   width: auto;
+   height: auto;
+
+}
+
+
+.inputsContainer p
+{
+
+   font-size: 18px;
+   text-align: left;
+   margin-left: 30px;
+   margin-right: 50px;
+   position: relative;
+   bottom: 10px;
+
+}
+
+
+.inputsContainer input
+{
+
+   width: 400px;
+   height: 35px;
+   border: 1px solid #0691D0;
+   border-radius: 3px;
+   background-color: white;
+   padding-left: 10px;
+   font-size: 18px;
+   text-align: left;
+   margin-bottom: 10px;
+
+}
+
+
+#currentPass
+{
+
+   border: 1px solid #F91535;
+   color: #F91535;
+
+}
+
+
+#editContainer input[type="submit"]
+{
+
+   width: 630px;
+   height: 35px;
+   border: 2px solid #0691D0;
+   border-radius: 3px;
+   font-size: 18px;
+   background-color: #0691D0;
+   color: white;
+   text-align: center;
+   cursor: pointer;
+   margin-top: 20px;
+
+}
+
+
+#editContainer input[type="submit"]:hover
+{
+
+    background-color: white;
+    color: #0691D0;
+
+}
